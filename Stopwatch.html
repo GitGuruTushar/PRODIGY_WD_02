@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gradient-to-b from-blue-500 via-blue-600 to-purple-700 text-white font-sans flex items-center justify-center h-screen">
+
+  <div class="container mx-auto p-16 bg-gray-800 rounded-3xl shadow-lg text-center">
+    <h1 class="text-5xl font-bold mb-10">Online Stopwatch</h1>
+
+    <div class="stopwatch-display text-8xl mb-8" id="display">00:00:00</div>
+
+    <div class="lap-times text-lg mb-8" id="lapTimes"></div>
+    
+    <div class="flex justify-center space-x-4">
+      <button class="btn" onclick="startStop()" style="background: linear-gradient(to right, #ff5f6d, #ffc371); padding: 12px 24px; border-radius: 6px;">Start/Pause</button>
+      <button class="btn" onclick="reset()" style="background: linear-gradient(to right, #5f2c82, #49a09d); padding: 12px 24px; border-radius: 6px;">Reset</button>
+      <button class="btn" onclick="lap()" style="background: linear-gradient(to right, #ff7e5f, #feb47b); padding: 12px 24px; border-radius: 6px;">Lap</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
